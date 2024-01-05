@@ -86,6 +86,7 @@ namespace Example
         double SAMPLES_PER_SEC_INV = (double)1 / Program.SAMPLES_PER_SEC;
         double time = 0;
 
+        // NOTE: BE CAREFUL ABOUT LIFETIME OF FUNCTION OBJECT.
         Program.WASAPIStreamer_Start(() => {
           UInt16[] data = new UInt16[(UInt32)(Program.WASAPIStreamer_GetBufferSize() / (Program.BITS_PER_SAMPLE / 8))];
 
