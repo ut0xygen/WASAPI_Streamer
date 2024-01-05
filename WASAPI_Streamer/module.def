@@ -1,0 +1,10 @@
+LIBRARY WASAPI_Streamer.dll
+
+EXPORTS
+  Initialize
+  Uninitialize
+  Start
+  Stop
+  GetIsStreaming
+  GetBufferSize
+  CopyToBuffer
